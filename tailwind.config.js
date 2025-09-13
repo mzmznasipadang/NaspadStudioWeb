@@ -9,7 +9,11 @@ module.exports = {
     extend: {
       colors: {
         primary: '#272660',
+        secondary: '#49bce9',
         white: '#ffffff',
+        black: '#000000',
+        'light-navy': '#3532a3',
+        'deep-cyan': '#3aa9d4',
       },
       fontFamily: {
         sans: ['Montserrat', 'system-ui', 'sans-serif'],
