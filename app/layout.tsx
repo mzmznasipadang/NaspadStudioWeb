@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: 'Naspad Studio',
     images: [
       {
-        url: '/OG.png',
+        url: 'https://raw.githubusercontent.com/mzmznasipadang/NaspadStudioWeb/main/public/OG.png',
         width: 1200,
         height: 630,
         alt: 'Naspad Studio - Coming Soon - Digital Solutions & Creative Agency',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Naspad Studio - Coming Soon',
     description: 'We are currently building our dream! Stay tuned for amazing digital solutions.',
-    images: ['/OG.png'],
+    images: ['https://raw.githubusercontent.com/mzmznasipadang/NaspadStudioWeb/main/public/OG.png'],
     creator: '@naspadstudio', // Update with your actual Twitter handle
     site: '@naspadstudio', // Update with your actual Twitter handle
   },
