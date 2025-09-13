@@ -14,6 +14,9 @@ module.exports = {
         black: '#000000',
         'light-navy': '#3532a3',
         'deep-cyan': '#3aa9d4',
+        'light-cyan': '#7dd3f0',
+        'bg-light': '#fefefe',
+        'text-dark': '#111111',
       },
       fontFamily: {
         sans: ['Montserrat', 'system-ui', 'sans-serif'],
