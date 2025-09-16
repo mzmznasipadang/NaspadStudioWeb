@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
+import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const imgNaspadIconlogoVer11 = "/logo.svg";
 
@@ -197,65 +199,13 @@ export default function Homepage() {
   };
 
   return (
-    <div className="bg-black relative w-full" data-name="Homepage" data-node-id="13:382">
+    <div className="bg-black relative w-full pt-[150px]" data-name="Homepage" data-node-id="13:382">
       {/* Hero Section */}
       <div className="relative w-full min-h-screen bg-gradient-to-b from-black to-primary overflow-hidden">
         {/* ASCII Animation Background */}
         <ASCIIAnimation />
-      {/* Header */}
-      <div className="absolute top-[50px] left-[50px] w-[200px] h-16">
-        <Image
-          src={imgNaspadIconlogoVer11}
-          alt="Naspad Studio Logo"
-          width={200}
-          height={64}
-          className="w-full h-full object-contain"
-        />
-      </div>
-
-      {/* Navigation */}
-      <div className="absolute bg-[#272660] box-border content-stretch flex flex-col gap-2.5 items-start justify-start left-1/2 px-20 py-4 rounded-[10px] top-[52px] translate-x-[-50%]" data-node-id="13:391">
-        <div className="content-stretch flex font-['Montserrat'] font-medium gap-14 items-center justify-start leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]" data-node-id="13:392">
-          <div className="relative shrink-0" data-node-id="13:394">
-            <button
-              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-              className="leading-[28px] text-nowrap whitespace-pre hover:text-secondary transition-colors duration-300 cursor-pointer bg-transparent border-none"
-            >
-              Services
-            </button>
-          </div>
-          <div className="relative shrink-0" data-node-id="13:395">
-            <button className="leading-[28px] text-nowrap whitespace-pre hover:text-secondary transition-colors duration-300 cursor-pointer bg-transparent border-none">
-              Portfolio
-            </button>
-          </div>
-          <div className="relative shrink-0" data-node-id="13:396">
-            <button
-              onClick={() => document.getElementById('talents')?.scrollIntoView({ behavior: 'smooth' })}
-              className="leading-[28px] text-nowrap whitespace-pre hover:text-secondary transition-colors duration-300 cursor-pointer bg-transparent border-none"
-            >
-              Team
-            </button>
-          </div>
-          <div className="relative shrink-0" data-node-id="20:21">
-            <button className="leading-[28px] text-nowrap whitespace-pre hover:text-secondary transition-colors duration-300 cursor-pointer bg-transparent border-none">
-              Career
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Book a Call Button (Top Right) */}
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="absolute top-[52px] right-[50px] bg-primary px-[27px] py-4 rounded-[10px] flex items-center justify-center cursor-pointer hover:bg-light-navy transition-colors duration-300"
-        onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
-      >
-        <div className="font-['Montserrat'] font-medium text-[20px] leading-[28px] text-secondary tracking-[0.1px]">
-          Book a Call
-        </div>
-      </motion.div>
+      {/* Navbar */}
+      <Navbar />
 
       {/* Main Content */}
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center" data-node-id="13:383">
@@ -287,9 +237,9 @@ export default function Homepage() {
         >
           <p className="leading-[56px] text-[48px]">
             <span>{`Fueling 🔥 Your Website Needs `}</span>
-            <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.24px]">Faster</span>
+            <span className="font-['Montserrat'] font-bold not-italic tracking-[0.24px]">Faster</span>
             <span>{` and `}</span>
-            <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.24px]">Easier</span>
+            <span className="font-['Montserrat'] font-bold not-italic tracking-[0.24px]">Easier</span>
           </p>
         </motion.div>
 
@@ -884,18 +834,8 @@ export default function Homepage() {
             </div>
           </motion.div>
 
-          {/* Footer Links */}
-          <div className="flex justify-between items-center">
-            <div className="font-['Montserrat'] text-[20px] leading-[28px] text-white tracking-[0.1px]">
-              <span className="font-semibold">© 2025 Naspad Studio. </span>
-              <span className="font-medium">Made with Love from Indonesia</span>
-            </div>
-            <div className="flex gap-[40px] font-['Montserrat'] font-medium text-[20px] leading-[28px] text-white tracking-[0.1px]">
-              <a href="#" className="hover:text-secondary transition-colors duration-300">Linkedin</a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">Instagram</a>
-              <a href="#" className="hover:text-secondary transition-colors duration-300">Twitter</a>
-            </div>
-          </div>
+          {/* Footer */}
+          <Footer />
         </div>
       </div>
     </div>
