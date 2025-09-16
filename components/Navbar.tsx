@@ -36,26 +36,30 @@ export default function Navbar({ activeTab }: NavbarProps) {
     }
 
     // Only add scroll listener on homepage
-    if (window.location.pathname === '/') {
+    if (typeof window !== 'undefined' && window.location.pathname === '/') {
       window.addEventListener('scroll', handleScroll)
       handleScroll() // Check initial position
     }
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('scroll', handleScroll)
+      }
     }
   }, [])
 
   // Determine which tab should be active
   const getActiveTab = () => {
     if (activeTab === 'portfolio') return 'portfolio'
-    if (window.location.pathname === '/' && currentSection === 'services') return 'services'
-    if (window.location.pathname === '/' && currentSection === 'team') return 'team'
+    if (typeof window !== 'undefined' && window.location.pathname === '/' && currentSection === 'services') return 'services'
+    if (typeof window !== 'undefined' && window.location.pathname === '/' && currentSection === 'team') return 'team'
     return activeTab
   }
 
   const activeTabState = getActiveTab()
   const handleNavigation = (section: string) => {
+    if (typeof window === 'undefined') return
+
     if (section === 'services') {
       // If on homepage, scroll to features section, otherwise go to homepage
       if (window.location.pathname === '/') {
@@ -76,6 +80,8 @@ export default function Navbar({ activeTab }: NavbarProps) {
   }
 
   const handleBookCall = () => {
+    if (typeof window === 'undefined') return
+
     // Scroll to CTA section if on homepage, otherwise go to homepage
     if (window.location.pathname === '/') {
       document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })
@@ -95,7 +101,7 @@ export default function Navbar({ activeTab }: NavbarProps) {
             width={200}
             height={64}
             className="w-full h-full object-contain cursor-pointer"
-            onClick={() => window.location.href = '/'}
+            onClick={() => typeof window !== 'undefined' && (window.location.href = '/')}
           />
         </div>
 
