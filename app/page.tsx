@@ -269,9 +269,9 @@ export default function Homepage() {
         >
           <div className="font-['Montserrat'] font-medium leading-[0] not-italic relative shrink-0 text-[0px] text-nowrap text-white tracking-[0.1px]" data-node-id="13:385">
             <p className="leading-[28px] text-[20px] whitespace-pre">
-              <span className>{`Deploy `}</span>
+              <span>{`Deploy `}</span>
               <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">{`Faster `}</span>
-              <span className>{`and `}</span>
+              <span>{`and `}</span>
               <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">Cheaper</span>
             </p>
           </div>
@@ -286,9 +286,9 @@ export default function Homepage() {
           data-node-id="13:386"
         >
           <p className="leading-[56px] text-[48px]">
-            <span className>{`Fueling 🔥 Your Website Needs `}</span>
+            <span>{`Fueling 🔥 Your Website Needs `}</span>
             <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.24px]">Faster</span>
-            <span className>{` and `}</span>
+            <span>{` and `}</span>
             <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.24px]">Easier</span>
           </p>
         </motion.div>
@@ -334,7 +334,7 @@ export default function Homepage() {
       </div>
 
       {/* Features Section */}
-      <div id="features" className="bg-[#272660] relative w-full min-h-screen py-[75px]" data-name="Features" data-node-id="13:399">
+      <div id="features" className="bg-[#272660] relative w-full h-[600px] py-[75px]" data-name="Features" data-node-id="13:399">
         {/* Features Badge */}
         <div className="absolute bg-[#3532a3] box-border content-stretch flex gap-2.5 items-center justify-center px-[31px] py-[11px] rounded-[30px] top-[75px] translate-x-[-50%]" data-node-id="13:400" style={{ left: "calc(50% + 246.5px)" }}>
           <div className="font-['Montserrat'] font-semibold leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]" data-node-id="13:401">
@@ -355,14 +355,15 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[50px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300"
+          className="absolute left-[50px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
           data-node-id="13:404"
         >
-          <div className="absolute font-['Montserrat'] font-normal leading-[0] left-[20px] not-italic text-[#49bce9] text-[18px] text-nowrap top-[30px] tracking-[0.09px]" data-node-id="13:406">
-            <p className="leading-[26px] whitespace-pre">/01</p>
+          <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:406">
+            /01
           </div>
-          <div className="absolute left-[20px] top-[225px]" data-node-id="13:407">
-            <div className="size-[50px]" data-node-id="21:36">
+
+          <div className="flex-1 flex flex-col justify-between">
+            <div className="size-[50px] mb-[20px]" data-node-id="21:36">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50 50">
                 <g id="Group 27">
                   <circle cx="25" cy="25" fill="#FEFEFE" id="Ellipse 1" r="25" />
@@ -375,11 +376,14 @@ export default function Homepage() {
                 </g>
               </svg>
             </div>
-            <div className="font-['Montserrat'] font-semibold leading-[0] not-italic text-[20px] text-nowrap text-white top-[70px] tracking-[0.1px] mt-[70px]" data-node-id="13:409">
-              <p className="leading-[28px] whitespace-pre">Professional Service</p>
-            </div>
-            <div className="font-['Montserrat'] font-normal leading-[0] not-italic text-[18px] text-white tracking-[0.09px] w-[210px] mt-[43px]" data-node-id="13:410">
-              <p className="leading-[26px]">Now offering the best of the best at the Academy.</p>
+
+            <div className="mt-auto">
+              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:409">
+                Professional Service
+              </div>
+              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:410">
+                Now offering the best of the best at the Academy.
+              </div>
             </div>
           </div>
         </motion.div>
@@ -390,30 +394,34 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[320px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300"
+          className="absolute left-[320px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
           data-node-id="13:411"
         >
-          <div className="absolute font-['Montserrat'] font-normal leading-[0] left-[20px] not-italic text-[#49bce9] text-[18px] text-nowrap top-[30px] tracking-[0.09px]" data-node-id="13:413">
-            <p className="leading-[26px] whitespace-pre">/02</p>
+          <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:413">
+            /02
           </div>
-          <div className="absolute left-[20px] top-[225px]" data-node-id="13:414">
-            <div className="size-[50px]" data-node-id="13:415">
+
+          <div className="flex-1 flex flex-col justify-between">
+            <div className="size-[50px] mb-[20px] relative" data-node-id="13:415">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50 50">
                 <circle cx="25" cy="25" fill="#FEFEFE" id="Ellipse 1" r="25" />
               </svg>
+              <div className="absolute left-[12px] size-[25px] top-[12px]" data-name="IconBezierCircle" data-node-id="21:39">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25 25">
+                  <g id="IconBezierCircle">
+                    <path d="M9.89583 5.68711C7.96357 6.42615 6.42615 7.96357 5.68711 9.89583M15.1042 5.68711C17.0365 6.42615 18.5739 7.96357 19.3129 9.89583M5.68711 15.1042C6.42615 17.0365 7.96357 18.5739 9.89583 19.3129M15.1042 19.3129C17.0365 18.5739 18.5739 17.0365 19.3129 15.1042M4.16667 14.5833H6.25C6.82529 14.5833 7.29167 14.117 7.29167 13.5417V11.4583C7.29167 10.883 6.82529 10.4167 6.25 10.4167H4.16667C3.59137 10.4167 3.125 10.883 3.125 11.4583V13.5417C3.125 14.117 3.59137 14.5833 4.16667 14.5833ZM14.5833 6.25V4.16667C14.5833 3.59137 14.117 3.125 13.5417 3.125H11.4583C10.883 3.125 10.4167 3.59137 10.4167 4.16667V6.25C10.4167 6.82529 10.883 7.29167 11.4583 7.29167H13.5417C14.117 7.29167 14.5833 6.82529 14.5833 6.25ZM17.7083 13.5417V11.4583C17.7083 10.883 18.1747 10.4167 18.75 10.4167H20.8333C21.4086 10.4167 21.875 10.883 21.875 11.4583V13.5417C21.875 14.117 21.4086 14.5833 20.8333 14.5833H18.75C18.1747 14.5833 17.7083 14.117 17.7083 13.5417ZM14.5833 20.8333V18.75C14.5833 18.1747 14.117 17.7083 13.5417 17.7083H11.4583C10.883 17.7083 10.4167 18.1747 10.4167 18.75V20.8333C10.4167 21.4086 10.883 21.875 11.4583 21.875H13.5417C14.117 21.875 14.5833 21.4086 14.5833 20.8333Z" id="Vector" stroke="#3532A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+                  </g>
+                </svg>
+              </div>
             </div>
-            <div className="absolute left-[12px] size-[25px] top-[12px]" data-name="IconBezierCircle" data-node-id="21:39">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25 25">
-                <g id="IconBezierCircle">
-                  <path d="M9.89583 5.68711C7.96357 6.42615 6.42615 7.96357 5.68711 9.89583M15.1042 5.68711C17.0365 6.42615 18.5739 7.96357 19.3129 9.89583M5.68711 15.1042C6.42615 17.0365 7.96357 18.5739 9.89583 19.3129M15.1042 19.3129C17.0365 18.5739 18.5739 17.0365 19.3129 15.1042M4.16667 14.5833H6.25C6.82529 14.5833 7.29167 14.117 7.29167 13.5417V11.4583C7.29167 10.883 6.82529 10.4167 6.25 10.4167H4.16667C3.59137 10.4167 3.125 10.883 3.125 11.4583V13.5417C3.125 14.117 3.59137 14.5833 4.16667 14.5833ZM14.5833 6.25V4.16667C14.5833 3.59137 14.117 3.125 13.5417 3.125H11.4583C10.883 3.125 10.4167 3.59137 10.4167 4.16667V6.25C10.4167 6.82529 10.883 7.29167 11.4583 7.29167H13.5417C14.117 7.29167 14.5833 6.82529 14.5833 6.25ZM17.7083 13.5417V11.4583C17.7083 10.883 18.1747 10.4167 18.75 10.4167H20.8333C21.4086 10.4167 21.875 10.883 21.875 11.4583V13.5417C21.875 14.117 21.4086 14.5833 20.8333 14.5833H18.75C18.1747 14.5833 17.7083 14.117 17.7083 13.5417ZM14.5833 20.8333V18.75C14.5833 18.1747 14.117 17.7083 13.5417 17.7083H11.4583C10.883 17.7083 10.4167 18.1747 10.4167 18.75V20.8333C10.4167 21.4086 10.883 21.875 11.4583 21.875H13.5417C14.117 21.875 14.5833 21.4086 14.5833 20.8333Z" id="Vector" stroke="#3532A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-                </g>
-              </svg>
-            </div>
-            <div className="font-['Montserrat'] font-semibold leading-[0] not-italic text-[20px] text-nowrap text-white tracking-[0.1px] mt-[70px]" data-node-id="13:416">
-              <p className="leading-[28px] whitespace-pre">Collaboration</p>
-            </div>
-            <div className="font-['Montserrat'] font-normal leading-[0] not-italic text-[18px] text-white tracking-[0.09px] w-[210px] mt-[43px]" data-node-id="13:417">
-              <p className="leading-[26px]">Continuous collaboration for faster deployment</p>
+
+            <div className="mt-auto">
+              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:416">
+                Collaboration
+              </div>
+              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:417">
+                Continuous collaboration for faster deployment
+              </div>
             </div>
           </div>
         </motion.div>
@@ -424,30 +432,34 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[590px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300"
+          className="absolute left-[590px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
           data-node-id="13:418"
         >
-          <div className="absolute font-['Montserrat'] font-normal leading-[0] left-[20px] not-italic text-[#49bce9] text-[18px] text-nowrap top-[30px] tracking-[0.09px]" data-node-id="13:420">
-            <p className="leading-[26px] whitespace-pre">/03</p>
+          <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:420">
+            /03
           </div>
-          <div className="absolute left-[20px] top-[225px]" data-node-id="13:421">
-            <div className="size-[50px]" data-node-id="13:422">
+
+          <div className="flex-1 flex flex-col justify-between">
+            <div className="size-[50px] mb-[20px] relative" data-node-id="13:422">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 50 50">
                 <circle cx="25" cy="25" fill="#FEFEFE" id="Ellipse 1" r="25" />
               </svg>
+              <div className="absolute left-[12px] size-[25px] top-[12px]" data-name="IconEarth" data-node-id="21:44">
+                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25 25">
+                  <g id="IconEarth">
+                    <path d="M4.34537 8.40636L7.13945 10.5034C7.82203 11.0158 8.80182 10.7862 9.18579 10.024C9.3648 9.66869 9.68942 9.4087 10.0753 9.31163L12.3393 8.74209C13.0642 8.55973 13.6299 7.99321 13.8111 7.26804L14.7146 3.65502M21.875 12.5C21.875 17.6777 17.6777 21.875 12.5 21.875C7.32233 21.875 3.125 17.6777 3.125 12.5C3.125 7.32233 7.32233 3.125 12.5 3.125C17.6777 3.125 21.875 7.32233 21.875 12.5ZM11.9012 16.665L11.0441 15.3793C10.7139 14.884 10.7798 14.2243 11.2016 13.8041C11.4548 13.5517 11.8044 13.4202 12.1612 13.4429L13.0224 13.4979C13.3805 13.5207 13.7261 13.6382 14.024 13.8383L15.4523 14.7982C16.084 15.2227 16.3022 16.0503 15.9618 16.731C15.7054 17.2437 15.1815 17.5676 14.6082 17.5676H13.5878C12.9101 17.5676 12.2772 17.2289 11.9012 16.665Z" id="Vector" stroke="#3532A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
+                  </g>
+                </svg>
+              </div>
             </div>
-            <div className="absolute left-[12px] size-[25px] top-[12px]" data-name="IconEarth" data-node-id="21:44">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 25 25">
-                <g id="IconEarth">
-                  <path d="M4.34537 8.40636L7.13945 10.5034C7.82203 11.0158 8.80182 10.7862 9.18579 10.024C9.3648 9.66869 9.68942 9.4087 10.0753 9.31163L12.3393 8.74209C13.0642 8.55973 13.6299 7.99321 13.8111 7.26804L14.7146 3.65502M21.875 12.5C21.875 17.6777 17.6777 21.875 12.5 21.875C7.32233 21.875 3.125 17.6777 3.125 12.5C3.125 7.32233 7.32233 3.125 12.5 3.125C17.6777 3.125 21.875 7.32233 21.875 12.5ZM11.9012 16.665L11.0441 15.3793C10.7139 14.884 10.7798 14.2243 11.2016 13.8041C11.4548 13.5517 11.8044 13.4202 12.1612 13.4429L13.0224 13.4979C13.3805 13.5207 13.7261 13.6382 14.024 13.8383L15.4523 14.7982C16.084 15.2227 16.3022 16.0503 15.9618 16.731C15.7054 17.2437 15.1815 17.5676 14.6082 17.5676H13.5878C12.9101 17.5676 12.2772 17.2289 11.9012 16.665Z" id="Vector" stroke="#3532A3" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
-                </g>
-              </svg>
-            </div>
-            <div className="font-['Montserrat'] font-semibold leading-[0] not-italic text-[20px] text-nowrap text-white tracking-[0.1px] mt-[70px]" data-node-id="13:423">
-              <p className="leading-[28px] whitespace-pre">World Class Service</p>
-            </div>
-            <div className="font-['Montserrat'] font-normal leading-[0] not-italic text-[18px] text-white tracking-[0.09px] w-[210px] mt-[43px]" data-node-id="13:424">
-              <p className="leading-[26px]">We are aiming to deliver a world-class services</p>
+
+            <div className="mt-auto">
+              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:423">
+                World Class Service
+              </div>
+              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:424">
+                We are aiming to deliver a world-class services
+              </div>
             </div>
           </div>
         </motion.div>
@@ -455,13 +467,13 @@ export default function Homepage() {
         {/* Description Text */}
         <div className="absolute font-['Montserrat'] font-medium leading-[0] left-[890px] not-italic text-[0px] text-white top-[175px] tracking-[0.1px] w-[400px]" data-node-id="13:425">
           <p className="leading-[28px] text-[20px]">
-            <span className>{`An All-in-One Solution offering `}</span>
+            <span>{`An All-in-One Solution offering `}</span>
             <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">consultation</span>
-            <span className>{`, `}</span>
+            <span>{`, `}</span>
             <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">design</span>
-            <span className>{` and `}</span>
+            <span>{` and `}</span>
             <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">build</span>
-            <span className>{` your web for your business needs.`}</span>
+            <span>{` your web for your business needs.`}</span>
           </p>
         </div>
       </div>
