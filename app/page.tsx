@@ -204,11 +204,11 @@ export default function Homepage() {
       <div className="relative w-full min-h-screen bg-gradient-to-b from-black to-primary overflow-hidden">
         {/* ASCII Animation Background */}
         <ASCIIAnimation />
-      {/* Navbar */}
-      <Navbar />
+        {/* Navbar */}
+        <Navbar />
 
-      {/* Main Content */}
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center" data-node-id="13:383">
+        {/* Main Content */}
+        <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center text-center pt-[20px] sm:pt-[40px] md:pt-[60px] lg:pt-[80px] xl:pt-[100px]" data-node-id="13:383">
         {/* Deploy Faster Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -284,20 +284,35 @@ export default function Homepage() {
       </div>
 
       {/* Features Section */}
-      <div id="features" className="bg-[#272660] relative w-full h-[600px] py-[75px]" data-name="Features" data-node-id="13:399">
+      <div id="features" className="bg-[#272660] relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[600px] xl:h-[600px]" data-name="Features" data-node-id="13:399">
         {/* Features Badge */}
-        <div className="absolute bg-[#3532a3] box-border content-stretch flex gap-2.5 items-center justify-center px-[31px] py-[11px] rounded-[30px] top-[75px] translate-x-[-50%]" data-node-id="13:400" style={{ left: "calc(50% + 246.5px)" }}>
-          <div className="font-['Montserrat'] font-semibold leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]" data-node-id="13:401">
-            <p className="leading-[28px] whitespace-pre">Features</p>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="absolute bg-[#3532a3] flex items-center justify-center rounded-[30px] top-[50px] sm:top-[60px] md:top-[75px] right-[20px] sm:right-[40px] md:right-[50px] lg:left-[890px] z-10 w-[153px] h-[50px]"
+          data-node-id="13:400"
+        >
+          <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px]" data-node-id="13:401">
+            Features
           </div>
-        </div>
+        </motion.div>
 
-        {/* Consult Now Button */}
-        <div className="absolute bg-[#3aa9d4] box-border content-stretch flex gap-2.5 items-center justify-center px-[31px] py-[11px] rounded-[30px] top-[300px] translate-x-[-50%]" data-node-id="13:402" style={{ left: "calc(50% + 268px)" }}>
-          <div className="font-['Montserrat'] font-semibold leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]" data-node-id="13:403">
-            <p className="leading-[28px] whitespace-pre">Consult Now</p>
+        {/* Check our Portfolio Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="absolute bg-[#3aa9d4] flex items-center justify-center rounded-[30px] top-[320px] sm:top-[360px] md:top-[409px] right-[20px] sm:right-[40px] md:right-[50px] lg:left-[890px] cursor-pointer z-10 w-[264px] h-[50px]"
+          data-node-id="13:402"
+          onClick={() => typeof window !== 'undefined' && (window.location.href = '/portfolio')}
+        >
+          <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px]" data-node-id="13:403">
+            Check our Portfolio
           </div>
-        </div>
+        </motion.div>
 
         {/* Feature Card 1 - Professional Service */}
         <motion.div
@@ -305,7 +320,7 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[50px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
+          className="absolute bg-[#3532a3] rounded-[30px] w-[180px] sm:w-[200px] md:w-[250px] h-[320px] sm:h-[380px] md:h-[450px] left-[20px] sm:left-[30px] md:left-[50px] top-[50px] sm:top-[60px] md:top-[75px] p-[15px] sm:p-[18px] md:p-[20px] flex flex-col cursor-pointer transition-all duration-300"
           data-node-id="13:404"
         >
           <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:406">
@@ -328,10 +343,10 @@ export default function Homepage() {
             </div>
 
             <div className="mt-auto">
-              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:409">
+              <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px] mb-[15px]" data-node-id="13:409">
                 Professional Service
               </div>
-              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:410">
+              <div className="font-['Montserrat'] font-normal text-[18px] leading-[26px] text-white tracking-[0.09px] w-[200px]" data-node-id="13:410">
                 Now offering the best of the best at the Academy.
               </div>
             </div>
@@ -344,7 +359,7 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[320px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
+          className="absolute bg-[#3532a3] rounded-[30px] w-[180px] sm:w-[200px] md:w-[250px] h-[320px] sm:h-[380px] md:h-[450px] left-[220px] sm:left-[250px] md:left-[320px] top-[50px] sm:top-[60px] md:top-[75px] p-[15px] sm:p-[18px] md:p-[20px] flex flex-col cursor-pointer transition-all duration-300"
           data-node-id="13:411"
         >
           <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:413">
@@ -366,10 +381,10 @@ export default function Homepage() {
             </div>
 
             <div className="mt-auto">
-              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:416">
+              <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px] mb-[15px]" data-node-id="13:416">
                 Collaboration
               </div>
-              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:417">
+              <div className="font-['Montserrat'] font-normal text-[18px] leading-[26px] text-white tracking-[0.09px] w-[200px]" data-node-id="13:417">
                 Continuous collaboration for faster deployment
               </div>
             </div>
@@ -382,7 +397,7 @@ export default function Homepage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(53, 50, 163, 0.3)" }}
-          className="absolute left-[590px] top-[75px] w-[250px] h-[450px] bg-[#3532a3] rounded-[30px] cursor-pointer transition-all duration-300 p-[20px] flex flex-col"
+          className="absolute bg-[#3532a3] rounded-[30px] w-[180px] sm:w-[200px] md:w-[250px] h-[320px] sm:h-[380px] md:h-[450px] left-[420px] sm:left-[470px] md:left-[590px] top-[50px] sm:top-[60px] md:top-[75px] p-[15px] sm:p-[18px] md:p-[20px] flex flex-col cursor-pointer transition-all duration-300 hidden sm:flex"
           data-node-id="13:418"
         >
           <div className="font-['Montserrat'] font-normal text-[#49bce9] text-[18px] leading-[26px] tracking-[0.09px] mb-[30px]" data-node-id="13:420">
@@ -404,10 +419,10 @@ export default function Homepage() {
             </div>
 
             <div className="mt-auto">
-              <div className="font-['Montserrat'] font-semibold text-[20px] text-white leading-[28px] tracking-[0.1px] mb-[15px]" data-node-id="13:423">
+              <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px] mb-[15px]" data-node-id="13:423">
                 World Class Service
               </div>
-              <div className="font-['Montserrat'] font-normal text-[18px] text-white leading-[26px] tracking-[0.09px]" data-node-id="13:424">
+              <div className="font-['Montserrat'] font-normal text-[18px] leading-[26px] text-white tracking-[0.09px] w-[200px]" data-node-id="13:424">
                 We are aiming to deliver a world-class services
               </div>
             </div>
@@ -415,22 +430,57 @@ export default function Homepage() {
         </motion.div>
 
         {/* Description Text */}
-        <div className="absolute font-['Montserrat'] font-medium leading-[0] left-[890px] not-italic text-[0px] text-white top-[175px] tracking-[0.1px] w-[400px]" data-node-id="13:425">
-          <p className="leading-[28px] text-[20px]">
-            <span>{`An All-in-One Solution offering `}</span>
-            <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">consultation</span>
-            <span>{`, `}</span>
-            <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">design</span>
-            <span>{` and `}</span>
-            <span className="font-['Montserrat'] font-semibold not-italic tracking-[0.1px]">build</span>
-            <span>{` your web for your business needs.`}</span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="absolute font-['Montserrat'] font-medium text-[16px] sm:text-[18px] md:text-[20px] leading-[24px] sm:leading-[26px] md:leading-[28px] text-white top-[120px] sm:top-[140px] md:top-[175px] right-[20px] sm:right-[40px] md:right-[50px] lg:left-[890px] tracking-[0.1px] w-[280px] sm:w-[350px] md:w-[400px] z-10"
+          data-node-id="13:425"
+        >
+          <p>
+            <span>An All-in-One Solution offering </span>
+            <span className="font-['Montserrat'] font-semibold tracking-[0.1px]">consultation</span>
+            <span>, </span>
+            <span className="font-['Montserrat'] font-semibold tracking-[0.1px]">design</span>
+            <span> and </span>
+            <span className="font-['Montserrat'] font-semibold tracking-[0.1px]">build</span>
+            <span> your web for your business needs.</span>
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Talents Section */}
       <div id="talents" className="bg-[#49bce9] relative w-full min-h-screen py-[75px]" data-name="Talents" data-node-id="13:426">
         {/* Talents Badge */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="absolute bg-[#3532a3] flex items-center justify-center px-[31px] py-[11px] rounded-[30px] top-[75px] left-[75px]"
+          data-node-id="13:427"
+        >
+          <div className="font-['Montserrat'] font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px]" data-node-id="13:428">
+            Talents
+          </div>
+        </motion.div>
+
+        {/* Header Text */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="absolute left-[75px] top-[155px] font-['Montserrat'] text-[32px] leading-[40px] text-black tracking-[0.16px]"
+          data-node-id="13:429"
+        >
+          <div className="mb-0">
+            Based in <span className="font-bold">South Tangerang ID</span>,
+          </div>
+          <div>
+            But experts in <span className="font-bold">World Class Services</span>
+          </div>
+        </motion.div>
+
+        {/* Talent Cards Container */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}

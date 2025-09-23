@@ -76,6 +76,8 @@ export default function Navbar({ activeTab }: NavbarProps) {
       } else {
         window.location.href = '/#talents'
       }
+    } else if (section === 'career') {
+      window.location.href = '/career'
     }
   }
 
@@ -106,8 +108,8 @@ export default function Navbar({ activeTab }: NavbarProps) {
         </div>
 
         {/* Navigation */}
-        <div className="absolute bg-[#272660] box-border content-stretch flex flex-col gap-2.5 items-start justify-start left-1/2 px-20 py-4 rounded-[10px] top-[52px] translate-x-[-50%]">
-          <div className="content-stretch flex font-['Montserrat'] font-medium gap-14 items-center justify-start leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]">
+        <div className="absolute bg-[#272660] box-border content-stretch flex flex-col gap-2.5 items-start justify-start left-1/2 px-20 py-4 rounded-[10px] top-[52px] translate-x-[-50%] border border-secondary">
+          <div className="content-stretch flex font-medium gap-14 items-center justify-start leading-[0] not-italic relative shrink-0 text-[20px] text-nowrap text-white tracking-[0.1px]">
             <div className="relative shrink-0">
               <button
                 onClick={() => handleNavigation('services')}
@@ -140,6 +142,7 @@ export default function Navbar({ activeTab }: NavbarProps) {
             </div>
             <div className="relative shrink-0">
               <button
+                onClick={() => handleNavigation('career')}
                 className={`leading-[28px] text-nowrap whitespace-pre transition-colors duration-300 cursor-pointer bg-transparent border-none ${
                   activeTabState === 'career' ? 'text-secondary font-semibold' : 'text-white hover:text-secondary'
                 }`}
@@ -154,10 +157,10 @@ export default function Navbar({ activeTab }: NavbarProps) {
         <motion.div
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="absolute top-[52px] right-[50px] bg-primary px-[27px] py-4 rounded-[10px] flex items-center justify-center cursor-pointer hover:bg-light-navy transition-colors duration-300"
+          className="absolute top-[52px] right-[50px] bg-primary px-[27px] py-4 rounded-[10px] flex items-center justify-center cursor-pointer hover:bg-light-navy transition-colors duration-300 border border-secondary"
           onClick={handleBookCall}
         >
-          <div className="font-['Montserrat'] font-medium text-[20px] leading-[28px] text-secondary tracking-[0.1px]">
+          <div className="font-semibold text-[20px] leading-[28px] text-white tracking-[0.1px]">
             Book a Call
           </div>
         </motion.div>
